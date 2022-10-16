@@ -24,16 +24,23 @@ void PrintArray(int[] array)
         else Console.Write($"{array[i]}");
     }
     Console.Write("]");
+}
 
+
+
+void NewArray(int[] array)
+{
 
     int count = 0;
+
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i] % 2 == 0) count++;
     }
-    Console.WriteLine($" -> {count}");
+    Console.Write($" ->{count}");
 }
 
 
 int[] arr = CreateArrayRndInt(4, 234, 897);
 PrintArray(arr);
+NewArray(arr);

@@ -25,7 +25,13 @@ void PrintArray(double[] array)
     }
     Console.Write("]");
 
-    double min = Int32.MaxValue;
+    
+}
+
+
+void NewArray(double[] array)
+{
+double min = Int32.MaxValue;
     double max = Int32.MinValue;
 
     for (int z = 0; z < array.Length; z++)
@@ -44,6 +50,6 @@ void PrintArray(double[] array)
     Console.WriteLine($" -> {res}");
 }
 
-
 double[] arr1 = CreateArrayRnddouble(5, 1, 100);
 PrintArray(arr1);
+NewArray(arr1);

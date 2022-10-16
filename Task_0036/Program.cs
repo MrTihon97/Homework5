@@ -28,7 +28,12 @@ void PrintArray(int[] array)
     Console.Write("]");
 
 
-    int sum = 0;
+   
+}
+
+void NewArray(int[] array)
+{
+  int sum = 0;
     for (int i = 0; i < array.Length; i += 2)
     {
         sum = sum + array[i];
@@ -36,6 +41,6 @@ void PrintArray(int[] array)
     Console.WriteLine($" -> {sum}");
 }
 
-
 int[] arr = CreateArrayRndInt(4, -80, 80);
 PrintArray(arr);
+NewArray(arr);
