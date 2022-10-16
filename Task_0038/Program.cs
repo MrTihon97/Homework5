@@ -9,8 +9,8 @@ double[] CreateArrayRnddouble(int size, int min, int max)
     var rnd = new Random();
     for (int i = 0; i < size; i++)
     {
-        double rndnum =rnd.NextDouble()*(max - min) + min;
-        array[i] = Math.Round(rndnum,1);
+        double rndnum = rnd.NextDouble() * (max - min) + min;
+        array[i] = Math.Round(rndnum, 1);
     }
     return array;
 }
@@ -25,23 +25,23 @@ void PrintArray(double[] array)
     }
     Console.Write("]");
 
-double min = Int32.MaxValue;
-double max = Int32.MinValue;
+    double min = Int32.MaxValue;
+    double max = Int32.MinValue;
 
-for (int z = 0; z < array.Length; z++)
-{
-    if (array[z] > max)
+    for (int z = 0; z < array.Length; z++)
+    {
+        if (array[z] > max)
         {
             max = array[z];
         }
-    if (array[z] < min)
+        if (array[z] < min)
         {
             min = array[z];
         }
-}
-double resault = max - min;
-double res = Math.Round(resault,1);
-Console.WriteLine($" -> {res}");
+    }
+    double resault = max - min;
+    double res = Math.Round(resault, 1);
+    Console.WriteLine($" -> {res}");
 }
 
 
